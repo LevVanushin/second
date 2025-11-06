@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="sign-in" id="signUpPage">
+      <a href="" id="linkSign" class="sign-up-link">Авторизоваться</a>
+      <h1 class="sign-in__caption">Регистрация</h1>
+
+      <form id="sign-in-form" name="signin" class="sign-in__form">
+        
+        <div class="email block">
+          <h3 class="caption">Email</h3>
+          <input class="email__input" name="email" type="email" placeholder="Введите почту"/>
+          <p class="error-text">Поле обязательно для заполнения</p>
+        </div>
+
+        <div class="password block">
+          <h3 class="caption">Пароль</h3>
+          <input type="password" name="password" class="password__input" placeholder="Введите пароль"/>
+          <p class="error-text">Поле обязательно для заполнения</p>
+        </div>
+        
+        <div class="checkbox block">
+          <div>
+            <input type="checkbox" name="check" class="checkbox__input" />
+            <p class="checkbox__text">Я согласен получать обновления на почту</p>
+          </div>
+          <p class="error-text">Поле обязательно для заполнения</p>
+        </div>
+
+        <button class="button" type="submit" id="btn">Регистрация</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

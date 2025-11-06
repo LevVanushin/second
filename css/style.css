@@ -1,0 +1,268 @@
+.container {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.sign-up {
+  display: none;
+  width: 600px;
+  position: relative;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 11px 0px 26px 0px;
+}
+.sign-up .sign-up-link {
+  position: relative;
+  align-self: flex-end;
+  top: 0;
+  right: 11px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.sign-up .sign-in__caption {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 17px;
+  color: rgb(120, 120, 120);
+  text-align: center;
+}
+.sign-up .sign-in__form {
+  width: 510px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-up .sign-in__form .error-text {
+  display: none;
+  padding-top: 5px;
+  color: #CB2424;
+  font-weight: 500;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.sign-up .sign-in__form input {
+  box-sizing: border-box;
+  width: 509px;
+  align-self: center;
+  background-color: transparent;
+  border: #787878 2px solid;
+  border-radius: 10px;
+  color: #222222;
+  padding: 7px 0px 6px 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  outline: none;
+}
+.sign-up .sign-in__form .caption {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  color: #222222;
+}
+.sign-up .sign-in__form .email {
+  max-width: 100%;
+  margin-bottom: 13px;
+}
+.sign-up .sign-in__form .password {
+  margin-bottom: 16px;
+}
+.sign-up .sign-in__form .checkbox {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+.sign-up .sign-in__form .checkbox div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sign-up .sign-in__form .checkbox input {
+  width: 24px;
+  height: 24px;
+}
+.sign-up .sign-in__form .button {
+  box-sizing: border-box;
+  width: 180px;
+  height: 52px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #1A226B;
+}
+
+.sign-in {
+  width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 11px 0px 26px 0px;
+}
+.sign-in .sign-up-link {
+  position: relative;
+  align-self: flex-end;
+  top: 0;
+  right: 11px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.sign-in .sign-in__caption {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 17px;
+  color: rgb(120, 120, 120);
+  text-align: center;
+}
+.sign-in .sign-in__form {
+  width: 510px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-in .sign-in__form .error-text {
+  display: none;
+  padding-top: 5px;
+  color: #CB2424;
+  font-weight: 500;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.sign-in .sign-in__form input {
+  box-sizing: border-box;
+  width: 509px;
+  align-self: center;
+  background-color: transparent;
+  border: #787878 2px solid;
+  border-radius: 10px;
+  color: #222222;
+  padding: 7px 0px 6px 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  outline: none;
+}
+.sign-in .sign-in__form .caption {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  color: #222222;
+}
+.sign-in .sign-in__form .email {
+  max-width: 100%;
+  margin-bottom: 13px;
+}
+.sign-in .sign-in__form .password {
+  margin-bottom: 16px;
+}
+.sign-in .sign-in__form .checkbox {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+.sign-in .sign-in__form .checkbox div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sign-in .sign-in__form .checkbox input {
+  width: 24px;
+  height: 24px;
+}
+.sign-in .sign-in__form .button {
+  box-sizing: border-box;
+  width: 180px;
+  height: 52px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #1A226B;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1B2473;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
