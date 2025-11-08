@@ -1,0 +1,99 @@
+.sign-up__form, .sign-in__form{
+    width: 510px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+
+    
+
+    .error-text, .error-text2{
+      display: none;
+      padding-top: 5px;
+      color: #CB2424;
+      font: {
+        weight: 500;
+        size: 10px;
+        family: $font;
+      }      
+    }
+
+    input{
+      box-sizing: border-box;
+      width: 509px;
+      align-self: center;
+
+      background-color: transparent;
+      border: #787878 2px solid;
+      border-radius: 10px;
+      color: #222222;
+
+      padding: 7px 0px 6px 15px;
+
+      font: {
+        family: $font;
+        size: 28px;
+        weight: 700;
+      }
+
+      outline: none;
+      }
+
+    .caption{
+      font: {
+        family: $font;
+        weight: 700;
+        size: 16px;
+      };
+
+      padding-bottom: 3px;
+      padding-left: 8px;
+
+      color: #222222;
+    }
+
+    .email{
+      max-width: 100%;
+      
+      margin-bottom: 13px;
+    }
+
+    .password{
+      margin-bottom: 16px;
+    }
+
+    .checkbox{
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      input{
+        width: 24px;
+        height: 24px;
+      }
+
+    }
+
+    .button{
+      box-sizing: border-box;
+      width: 180px;
+      height: 52px;
+      text-align: center;
+      font: {
+        family: $font;
+        weight: 700;
+        size: 24px; 
+      };
+      border-radius: 10px;
+      border: none;
+      color: white;
+      background-color: $button-color;
+    }
+  }

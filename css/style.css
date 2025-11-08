@@ -5,111 +5,16 @@
 }
 
 .sign-up {
-  display: none;
-  width: 600px;
-  position: relative;
-  flex-direction: column;
-  max-width: 600px;
-  margin: auto;
-  background-color: #FFFFFF;
-  border-radius: 20px;
-  padding: 11px 0px 26px 0px;
-}
-.sign-up .sign-up-link {
-  position: relative;
-  align-self: flex-end;
-  top: 0;
-  right: 11px;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-}
-.sign-up .sign-in__caption {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 50px;
-  margin-bottom: 17px;
-  color: rgb(120, 120, 120);
-  text-align: center;
-}
-.sign-up .sign-in__form {
-  width: 510px;
   display: flex;
-  align-self: center;
-  flex-direction: column;
-  align-items: center;
-}
-.sign-up .sign-in__form .error-text {
-  display: none;
-  padding-top: 5px;
-  color: #CB2424;
-  font-weight: 500;
-  font-size: 10px;
-  font-family: "Roboto", sans-serif;
-}
-.sign-up .sign-in__form input {
-  box-sizing: border-box;
-  width: 509px;
-  align-self: center;
-  background-color: transparent;
-  border: #787878 2px solid;
-  border-radius: 10px;
-  color: #222222;
-  padding: 7px 0px 6px 15px;
-  font-family: "Roboto", sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  outline: none;
-}
-.sign-up .sign-in__form .caption {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  padding-bottom: 3px;
-  padding-left: 8px;
-  color: #222222;
-}
-.sign-up .sign-in__form .email {
-  max-width: 100%;
-  margin-bottom: 13px;
-}
-.sign-up .sign-in__form .password {
-  margin-bottom: 16px;
-}
-.sign-up .sign-in__form .checkbox {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  align-items: flex-start;
-  margin-bottom: 14px;
-}
-.sign-up .sign-in__form .checkbox div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.sign-up .sign-in__form .checkbox input {
-  width: 24px;
-  height: 24px;
-}
-.sign-up .sign-in__form .button {
-  box-sizing: border-box;
-  width: 180px;
-  height: 52px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  background-color: #1A226B;
 }
 
 .sign-in {
+  display: none;
+}
+
+.sign-up, .sign-in {
   width: 600px;
   position: relative;
-  display: flex;
   flex-direction: column;
   max-width: 600px;
   margin: auto;
@@ -117,7 +22,7 @@
   border-radius: 20px;
   padding: 11px 0px 26px 0px;
 }
-.sign-in .sign-up-link {
+.sign-up .sign-link, .sign-in .sign-link {
   position: relative;
   align-self: flex-end;
   top: 0;
@@ -126,7 +31,7 @@
   font-size: 14px;
   font-weight: 700;
 }
-.sign-in .sign-in__caption {
+.sign-up .sign-in__caption, .sign-in .sign-in__caption {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 50px;
@@ -134,14 +39,27 @@
   color: rgb(120, 120, 120);
   text-align: center;
 }
-.sign-in .sign-in__form {
+
+.welcome-page {
+  display: none;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+}
+.welcome-page h1 {
+  font-size: 50px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.sign-up__form, .sign-in__form {
   width: 510px;
   display: flex;
   align-self: center;
   flex-direction: column;
   align-items: center;
 }
-.sign-in .sign-in__form .error-text {
+.sign-up__form .error-text, .sign-up__form .error-text2, .sign-in__form .error-text, .sign-in__form .error-text2 {
   display: none;
   padding-top: 5px;
   color: #CB2424;
@@ -149,7 +67,7 @@
   font-size: 10px;
   font-family: "Roboto", sans-serif;
 }
-.sign-in .sign-in__form input {
+.sign-up__form input, .sign-in__form input {
   box-sizing: border-box;
   width: 509px;
   align-self: center;
@@ -163,7 +81,7 @@
   font-weight: 700;
   outline: none;
 }
-.sign-in .sign-in__form .caption {
+.sign-up__form .caption, .sign-in__form .caption {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -171,30 +89,30 @@
   padding-left: 8px;
   color: #222222;
 }
-.sign-in .sign-in__form .email {
+.sign-up__form .email, .sign-in__form .email {
   max-width: 100%;
   margin-bottom: 13px;
 }
-.sign-in .sign-in__form .password {
+.sign-up__form .password, .sign-in__form .password {
   margin-bottom: 16px;
 }
-.sign-in .sign-in__form .checkbox {
+.sign-up__form .checkbox, .sign-in__form .checkbox {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   align-items: flex-start;
   margin-bottom: 14px;
 }
-.sign-in .sign-in__form .checkbox div {
+.sign-up__form .checkbox div, .sign-in__form .checkbox div {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.sign-in .sign-in__form .checkbox input {
+.sign-up__form .checkbox input, .sign-in__form .checkbox input {
   width: 24px;
   height: 24px;
 }
-.sign-in .sign-in__form .button {
+.sign-up__form .button, .sign-in__form .button {
   box-sizing: border-box;
   width: 180px;
   height: 52px;
